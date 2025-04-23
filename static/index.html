@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta name='description' content='Generate SpongeBob Squarepants waiting cards' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SpongeBob Waiting Cards Generator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel='stylesheet' href='css/site.css'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.13/html-to-image.min.js"
+        integrity="sha512-iZ2ORl595Wx6miw+GuadDet4WQbdSWS3JLMoNfY8cRGoEFy6oT3G9IbcrBeL6AfkgpA51ETt/faX6yLV+/gFJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src='js/main.js'></script>
+</head>
+
+<body>
+    <main class="main">
+        <h1 class="main">SpongeBob Time Cards Generator</h1>
+        <form class="pure-form">
+            <div class="form-group-container">
+                <div class="form-group">
+                    <label for="text-input">Text</label>
+                    <input type="text" id="text-input" class="main" value="Three hours later ..."></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="background-select">Background</label>
+                    <select id="background-select">
+                        <option value="img/16.png">Bamboo</option>
+                        <option value="img/11.png">Crosshatch</option>
+                        <option value="img/08.png">Flowers</option>
+                        <option value="img/01.jpg">Flowers - Blue</option>
+                        <option value="img/04.png">Flowers - Blue 2</option>
+                        <option value="img/10.png">Heads</option>
+                        <option value="img/07.png">Party</option>
+                        <option value="img/05.png">Sand</option>
+                        <option value="img/03.png">Seaweed - Blue</option>
+                        <option value="img/02.jpg">Seaweed - Green</option>
+                        <option value="img/09.png">Seaweed</option>
+                        <option value="img/15.png">Seashells</option>
+                        <option value="img/13.png">Steel Wall</option>
+                        <option value="img/12.png">Tiles - Green</option>
+                        <option value="img/18.png">Tiles - Purple</option>
+                        <option value="img/06.png">Title</option>
+                        <option value="img/14.jpg">Wood - Purple</option>
+                        <option value="img/17.png">Wood</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="font-size">Font size</label>
+                    <input type="number" id="font-size" style="width: 80px;" value="62">
+                </div>
+
+                <div class="form-group">
+                    <label for="font-color">Font color</label>
+                    <input type="color" id="font-color" value="#ffffff">
+                </div>
+            </div>
+
+            <br>
+            <button type="button" class="pure-button pure-button-primary" id="downloadBtn">Download</button>
+        </form>
+        <br><br>
+        <div class="wrapper card_text" style="--theme-color: #ffffff; --theme-fontSize: 62px;">
+            <img src="img/16.png" alt="Background" class="card_text">
+            <div class="centered card_text">Three hours later ...</div>
+        </div>
+    </main>
+</body>
+
+</html>
